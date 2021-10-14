@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="5">
+    <widget class="QPushButton" name="sortAscButton">
+     <property name="text">
+      <string>sort ASC</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="4">
+    <widget class="ListView" name="sortedListView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLineEdit" name="mainLineEdit"/>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QPushButton" name="removeMainListButton">
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>filter after sort</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QLineEdit" name="filterLineEdit"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>sort:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="addMainButton">
+     <property name="text">
+      <string>add</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7" colspan="3">
+    <widget class="QPushButton" name="removeFilteredButton">
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="ListView" name="mainListView"/>
+   </item>
+   <item row="0" column="9">
+    <widget class="QPushButton" name="resetFilterButton">
+     <property name="text">
+      <string>reset filter</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" colspan="4">
+    <widget class="QPushButton" name="removeSortedButton">
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7" colspan="3">
+    <widget class="ListView" name="filteredListView"/>
+   </item>
+   <item row="0" column="6">
+    <widget class="QPushButton" name="sortDescButton">
+     <property name="text">
+      <string>sort DESC</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListView</class>
+   <extends>QListView</extends>
+   <header>listview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
